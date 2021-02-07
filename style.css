@@ -1,0 +1,21 @@
+/*===========================
+<|-Global Styles          -|>
+===========================*/
+* {
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+thead tr td {
+    text-align: center;
+}
+
+#editButton {
+    display: none;
+}

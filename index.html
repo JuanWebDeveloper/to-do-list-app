@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chores App</title>
+    <!--===========================
+    <|-Plugins Of CSS           -|>
+    ============================-->
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+
+    <!--===============
+    <|-Font     -|>
+    ================-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <!--===========================
+    <|-Custom CSS               -|>
+    ============================-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--===========================
+    <|-Plugins Of JavaScript    -|>
+    ============================-->
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+    <!--===========================
+    <|-Navbar                   -|>
+    ============================-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">Chores App</a>
+    </nav>
+
+    <div class="container p-4">
+        <div class="row">
+            <!--===========================
+            <|-Form To Add Task         -|>
+            ============================-->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="choresForm">
+                            <input type="hidden" id="homeworkId">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Name Of The Homework" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="description" cols="30" rows="10" class="form-control" placeholder="Description Of The Homework"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-success btn-block text-center" id="submitButton">Save Homework</button>
+                            <button type="submit" class="btn btn-info btn-block text-center" id="editButton">Save Edition</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!--===========================
+            <|-Task Table               -|>
+            ============================-->
+            <div class="col-md-8">
+                <table class="table table-bordered table-sm">
+                    <thead>
+                        <tr>
+                            <td class="ggg">ID</td>
+                            <td>Name</td>
+                            <td>Description</td>
+                            <td>Edit</td>
+                            <td>Delete Homework</td>
+                        </tr>
+                    </thead>
+
+                    <tbody id="chores"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--===========================
+    <|-Custom JavaScript        -|>
+    ============================-->
+    <script src="app.js"></script>
+</body>
+</html>
